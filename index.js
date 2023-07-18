@@ -54,6 +54,7 @@ function toggleModal() {
     }
     else {
         isModalOpen = true
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         document.body.classList += " modal--open";
     }
 }
